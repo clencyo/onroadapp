@@ -9,11 +9,9 @@
 
     <EditText
         android:id="@+id/edt_location"
-        android:layout_width="475dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="106dp"
-        android:layout_marginEnd="32dp"
         android:background="@drawable/button_bg"
         android:ems="10"
         android:inputType="text"
@@ -41,8 +39,8 @@
         android:textColor="@color/black"
         android:textSize="35sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/edt_price"
-        app:layout_constraintStart_toStartOf="@+id/edt_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_location" />
 
     <EditText
@@ -59,38 +57,38 @@
         android:textColor="@color/black"
         android:textSize="35sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/btn_photo"
-        app:layout_constraintStart_toStartOf="@+id/btn_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_service" />
 
     <Button
         android:id="@+id/btn_photo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="217dp"
-        android:background="@drawable/input_bg"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/button_bg"
         android:text="View Uploaded Photos"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/btn_data"
-        app:layout_constraintStart_toStartOf="@+id/btn_data"
+        app:layout_constraintBottom_toTopOf="@+id/btn_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_data"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginBottom="105dp"
         android:background="@drawable/input_bg"
         android:text="Upload Service"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_photo" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
